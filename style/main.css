@@ -1,0 +1,56 @@
+/*as variáveis das cores ficam armazenadas dentro do elemento raiz do CSS:*/
+:root{
+    --vermelho:#E50914;
+    --preto: #141414;
+}
+
+/* Reset de todos os elementos CSS:*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*impede que os elementos rompam a borda da caixa*/
+}
+
+/*Elentos Bse: */
+
+body {
+    background: var(--preto);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+header .container {
+    display: flex; /*utilizando o flex-box*/
+    flex-direction: row; /*elementos posicionados em linha*/
+    align-items: center;
+    justify-content: space-between; /*espaço entre os elementos*/
+
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #FFF;
+}
+
+/*Filme Principal*/
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');
+    height: 400px; /*altura da imagem*/
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}

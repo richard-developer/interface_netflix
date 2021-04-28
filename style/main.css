@@ -28,6 +28,7 @@ header .container {
 }
 
 header .logo {
+    margin-left: 5px;
     color: var(--vermelho);
     font-size: 40px;
 }
@@ -45,12 +46,58 @@ header nav a:hover{
 /*Filme Principal*/
 .filme-principal {
     font-size: 16px;
+    /*aplica uma camada mais escura em cima da imgem:*/
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');
     height: 400px; /*altura da imagem*/
     background-size: cover;
     
-    display: flex;
-    flex-direction: column;
+    display: flex; 
+    flex-direction: column; /*elementos dispostos em colunas*/
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start; /*elementos começam sempre da esquerda*/
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px; /*Primeiro valor: cima e baixo. Segundo valor: esquerda e direita.*/
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /*mostra o mãozinha ao passar pelo botão*/ 
+    transition: .4s ease all ; /*transição: animação*/
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 6px;
+}
+
+/*Wrapper:*/
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%; /*largura de 70% da tela*/
 }

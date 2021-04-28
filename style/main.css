@@ -101,3 +101,14 @@ header nav a:hover{
 .filme-principal .container {
     width: 70%; /*largura de 70% da tela*/
 }
+
+/*CSS Carousel: */
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-filmes {
+    margin-top: 5px;
+}

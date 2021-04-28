@@ -17,3 +17,10 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+
+function assistirAgora(){
+    // abre uma nova aba do navegador com o site abaixo:
+    window.open("https://www.youtube.com/watch?v=kpWMwSSl2PM");
+    
+}
